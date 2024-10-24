@@ -24,7 +24,7 @@ pnpm install
 
 ### Ejecutar las pruebas globalmente:
 
-Para correr todas las pruebas de manera global, ejecuta el siguiente comando:
+Para correr todas las pruebas directamente, ejecuta el siguiente comando:
 
 ```bash
 pnpm test
