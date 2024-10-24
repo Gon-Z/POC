@@ -1,10 +1,10 @@
 import React from 'react';
-import CharacterList from './components/CharacterList.jsx';
+import ManejoCharacter from './componentes/ManejoCharacter.jsx';
 
 function App() {
   return (
     <div className="App">
-      <CharacterList />
+      <ManejoCharacter />
     </div>
   );
 }

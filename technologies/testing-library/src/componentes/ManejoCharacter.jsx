@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import ListaCharacter from './ListaCharacter.jsx';
 
-const CharacterList = () => {
+const ManejoCharacter = () => {
   const [characters, setCharacters] = useState([
-    { id: 1, name: 'Character' },
-    { id: 2, name: 'Character' },
-    { id: 3, name: 'Character' },
+    { id: 1, name: 'Character 1' },
+    { id: 2, name: 'Character 2' },
+    { id: 3, name: 'Character 3' },
   ]);
   const [newCharacter, setNewCharacter] = useState({ id: '', name: '' });
 
@@ -22,7 +23,7 @@ const CharacterList = () => {
 
   return (
     <div>
-      <h1>Character List</h1>
+      <h1>Manejo de Character </h1>
       <form onSubmit={handleAddCharacter}>
         <input
           type="text"
@@ -40,18 +41,11 @@ const CharacterList = () => {
             setNewCharacter({ ...newCharacter, name: e.target.value })
           }
         />
-        <button type="submit">Add Character</button>
+        <button type="submit">Agregar Character</button>
       </form>
-      <ul>
-        {characters.map((character) => (
-          <li key={character.id}>
-            {character.name}&nbsp;{character.id}
-            <button onClick={() => handleDelete(character.id)}>Delete</button>
-          </li>
-        ))}
-      </ul>
+      <ListaCharacter characters={characters} onDelete={handleDelete} />
     </div>
   );
 };
 
-export default CharacterList;
+export default ManejoCharacter;
