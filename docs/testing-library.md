@@ -9,9 +9,12 @@ La filosofía de Testing Library es centrarse en la accesibilidad y en probar el
 ## Tipos De Testing
 Testing Library es una herramienta diseñada principalmente para realizar pruebas de integración y pruebas funcionales (o de usuario) en aplicaciones web, aunque también puede usarse para algunas pruebas unitarias. A continuación, se presentan los principales tipos de pruebas que se pueden realizar con Testing Library:
 
-- __Pruebas funcionales o de usuario:__ Se enfocan en cómo el usuario interactúa con la aplicación. Verifican que los elementos de la interfaz de usuario (UI) respondan correctamente cuando el usuario hace clic, escribe en un formulario o realiza alguna acción. Este es el enfoque principal de Testing Library, simulando cómo un usuario real usaría la aplicación.
 - __Pruebas de integración:__ Aseguran que diferentes partes del sistema funcionen bien juntas. Testing Library permite verificar que los componentes se comuniquen correctamente entre sí, probando cómo se comporta la UI al integrarse con otras partes del sistema.
 - __Pruebas unitarias:__ Aunque no es el enfoque principal, Testing Library también puede usarse para probar unidades individuales (como componentes o funciones) de manera aislada. Sin embargo, para este tipo de pruebas es más común usar herramientas especializadas como Jest.
+
+## Alcance / ¿Admiten E2E?
+Testing Library en sí no está diseñado específicamente para pruebas end-to-end (E2E). Es principalmente una librería para pruebas unitarias y de integración enfocada en probar componentes de UI de forma aislada. Sin embargo, hay una herramienta relacionada llamada Cypress Testing Library que extiende Cypress (un framework de pruebas E2E) con los mismos principios y selectores de Testing Library.
+
 
 ## Quienes lo utilizan
 
@@ -42,7 +45,8 @@ Para un desarrollador con experiencia intermedia en React, JavaScript y Jest, Te
 - __Prevención de errores:__ El hacer tests a lo largo de un proyecto ocasiona que se encuentren errores inesperados y diversos problemas antes que el software salga a producción. Esto evitará que el software colapse y que ofrezca una mala experiencia al usuario final.
 - __Ahorro de tiempo y recursos:__ Puede parecer que crear tests consuma tiempo y recursos, pero es todo lo contrario. Es una inversión que te ahorra tiempo a largo plazo y también dolores de cabeza. Si se solucionan problemas en una etapa temprana del desarrollo el proceso va a ser más rápido y económico que hacerlo después.
 - __Facilita el mantenimiento:__ Un software bien probado y estructurado es más fácil de mantener y actualizar. Tener tests permite garantizar que si hay actualizaciones de librerías que se estén utilizando o cambios en los Apis y servicios que están siendo consumidos no introduzcan nuevos errores en el sistema. Esto ayuda a mantener la estabilidad del software a lo largo del tiempo.
-- __Satisfacción:__ El resultado mejora la satisfacción del usuario final si se tiene una aplicación web que funciona correctamente, satisface las necesidades del usuario y no tiene errores imprevistos genera una experiencia más satisfactoria en el cliente. Esto aumenta la retención de los usuarios en la plataforma, genera opiniones positivas y recomendaciones.
+- __Satisfacción del usuario:__ El resultado mejora la satisfacción del usuario final si se tiene una aplicación web que funciona correctamente, satisface las necesidades del usuario y no tiene errores imprevistos
+genera una experiencia más satisfactoria en el cliente. Esto aumenta la retención de los usuarios en la plataforma, genera opiniones positivas y recomendaciones.
 - __Confianza en el equipo de desarrollo:__  Tener tests que aborden los principales problemas que pueden ocurrir así como que se aseguren de que cumplen las expectativas, a los desarrolladores les proporciona una mayor confianza en el trabajo diario. Pudiendo hacer refactoring, añadir nuevas funcionalidade sin miedo a que colapse algo.
 
 
