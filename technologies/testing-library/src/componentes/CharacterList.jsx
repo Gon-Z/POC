@@ -9,14 +9,14 @@ const CharacterList = () => {
   const [newCharacter, setNewCharacter] = useState({ id: '', name: '' });
 
   const handleDelete = (id) => {
-    setCharacters(characters.filter(character => character.id !== id));
+    setCharacters(characters.filter((character) => character.id !== id));
   };
 
   const handleAddCharacter = (e) => {
-    e.preventDefault(); // Prevenir el comportamiento por defecto del formulario
+    e.preventDefault();
     if (newCharacter.id && newCharacter.name) {
       setCharacters([...characters, { ...newCharacter }]);
-      setNewCharacter({ id: '', name: '' }); // Resetea el formulario
+      setNewCharacter({ id: '', name: '' });
     }
   };
 
@@ -28,18 +28,22 @@ const CharacterList = () => {
           type="text"
           placeholder="Character ID"
           value={newCharacter.id}
-          onChange={(e) => setNewCharacter({ ...newCharacter, id: e.target.value })}
+          onChange={(e) =>
+            setNewCharacter({ ...newCharacter, id: e.target.value })
+          }
         />
         <input
           type="text"
           placeholder="Character Name"
           value={newCharacter.name}
-          onChange={(e) => setNewCharacter({ ...newCharacter, name: e.target.value })}
+          onChange={(e) =>
+            setNewCharacter({ ...newCharacter, name: e.target.value })
+          }
         />
         <button type="submit">Add Character</button>
       </form>
       <ul>
-        {characters.map(character => (
+        {characters.map((character) => (
           <li key={character.id}>
             {character.name}&nbsp;{character.id}
             <button onClick={() => handleDelete(character.id)}>Delete</button>
