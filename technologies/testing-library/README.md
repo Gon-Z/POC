@@ -22,7 +22,7 @@ pnpm install
 
 ## 3. Ejecutar las pruebas:
 
-### 🟢 Ejecutar las pruebas globalmente:
+### Ejecutar las pruebas globalmente:
 
 Para correr todas las pruebas de manera global, ejecuta el siguiente comando:
 
@@ -30,7 +30,7 @@ Para correr todas las pruebas de manera global, ejecuta el siguiente comando:
 pnpm test
 ```
 
-### 👀 Modo interactivo para seleccionar la forma de ejecucion:
+###  Modo interactivo para seleccionar la forma de ejecucion:
 
 ```bash
 pnpm test -- --watch
