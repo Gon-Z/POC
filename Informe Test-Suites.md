@@ -224,7 +224,7 @@ Mocha soporta tanto pruebas sincrónicas como asincrónicas. Es posible manejar 
 
 ### Control granular de pruebas
 
-Es posible ejecutar tests específicos o conjuntos de tests mediante palabras clave como only y skip. ¿Por qué no es más útil comentar y descomentar? Fácil implementación
+Es posible ejecutar tests específicos o conjuntos de tests mediante palabras clave como only y skip.
 
 ### Configuración de hooks
 
